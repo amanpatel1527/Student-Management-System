@@ -7,7 +7,7 @@
 struct Student {
     int id;
     std::string name;
-    char grade; // Changed from float to char
+    char grade; 
 };
 
 // Function to add a new student
