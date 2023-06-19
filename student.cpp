@@ -68,6 +68,7 @@ float calculateAverageGrade(const std::vector<Student>& students) {
 }
 
 // Function to display all students
+
 void displayAllStudents(const std::vector<Student>& students) {
     for (const auto& student : students) {
         displayStudent(student);
@@ -129,6 +130,7 @@ int main() {
         std::cout << "8. Exit\n";
         std::cout << "Enter your choice: ";
         std::cin >> choice;
+        std::cout<<std::endl;
         
         switch (choice) {
             case 1:
@@ -150,6 +152,7 @@ int main() {
                 std::cout << "Average grade: " << calculateAverageGrade(students) << "\n";
                 break;
             case 5:
+                std::cout << "List of all students:\n";
                 displayAllStudents(students);
                 break;
             case 6:
